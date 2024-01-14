@@ -9,7 +9,7 @@
  *      };
  * }
  */
-export function createTextNode(text) {
+ function createTextNode(text) {
     return {
         type: 'TEXT_ELEMENT',
         props: {
@@ -18,7 +18,7 @@ export function createTextNode(text) {
         }
     }
 }
-export function createElement(type, props, ...children) {
+ function createElement(type, props, ...children) {
     return {
         type,
         props: {
@@ -32,7 +32,7 @@ export function createElement(type, props, ...children) {
 // const el = createElement('div', {id: 'app'}, textEl)
 
 
-export function render (el = {}, container) {
+ function render (el = {}, container) {
     const dom = el.type === 'TEXT_ELEMENT' ? document.createTextNode('') : document.createElement(el.type)
 
     // dom props

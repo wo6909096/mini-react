@@ -1,4 +1,5 @@
-import React from "./core/React.js"
+/**@jsx CReact.createElement */
+import CReact from "./core/React.js"
 
 // const App = React.createElement('div', {id: 'app'}, 'hello word!!', 'mini-react')
 const App = <div>hello word!!</div>
