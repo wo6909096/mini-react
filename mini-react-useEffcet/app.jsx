@@ -11,23 +11,20 @@ function Foo() {
   }
 
   React.useEffect(() => {
-    console.log("init");
     return () => {
-      console.log("unmount 0");
+      console.log("useEffect");
     };
   }, []);
 
   React.useEffect(() => {
-    console.log("update", count);
     return () => {
-      console.log("unmount 1");
+      console.log("useEffect 22");
     };
   }, [count]);
 
   React.useEffect(() => {
-    console.log("update", count);
     return () => {
-      console.log("unmount 2");
+      console.log("useEffect 333");
     };
   }, [count]);
 
